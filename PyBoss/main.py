@@ -4,7 +4,7 @@ import csv
 
 
 # Declare file location through pathlib
-input_file = os.path.join("CSV-Resources", "employee_data.csv")
+input_file = os.path.join("Resources", "employee_data.csv")
 
 # Creating a Dictionary to store all the States in USA and the abbreviations
 usa_state_abbreviations = {
@@ -109,7 +109,7 @@ with open(input_file,newline="", encoding="utf-8") as csvfile:
 formated_csv = zip(Employee_ID, First_Name, Last_Name, DOB_new, SSN_Hide, state_abbreviations)
 
 # Set variable for output file
-output_file = os.path.join("CSV-Formated","Formated_Employee_Data.csv")
+output_file = os.path.join("Formated","FORMATED_EMPLOYEE_DATA.csv")
 
 #  Open the output file
 with open(output_file, "w") as datafile:
